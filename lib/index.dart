@@ -45,7 +45,7 @@ class _IndexPageState extends State<IndexPage> {
           //"القرآن",
           "Quran",
           style: TextStyle(
-              //fontFamily: 'quran',
+              //fontFami     jhgjhly: 'quran',
               fontSize: 35,
               fontWeight: FontWeight.bold,
               color: Colors.white,
