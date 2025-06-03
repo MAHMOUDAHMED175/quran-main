@@ -160,6 +160,7 @@ class _MyAppState extends State<MyApp> {
       title: 'Quran',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        //kjkj
         primarySwatch: Colors.orange,
       ),
       home: const IndexPage(),
