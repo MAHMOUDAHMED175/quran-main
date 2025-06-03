@@ -20,7 +20,7 @@ jobs:
         uses: actions/checkout@v3
 
 
-      - name: ser up Java 17
+      - name: serupJava17
         uses: actions/setup-java@v3
         with:
           distribution: 'temurin'
