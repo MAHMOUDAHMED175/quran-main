@@ -1,51 +1,51 @@
-# name: Flutter CI/CD
+name: Flutter CI/CD
 
-# on:
-#   push:
-#     branches:
-#       - main
+on:
+  push:
+    branches:
+      - main
     
-#   pull_request:
-#     branches:
-#       - main
+  pull_request:
+    branches:
+      - main
 
 
 
-# jobs:
-#   build:
-#     runs-on: ubuntu-latest
+jobs:
+  build:
+    runs-on: ubuntu-latest
 
-#     steps:
-#       - name: chechout code
-#         uses: actions/checkout@v3
-
-
-#       - name: ser up Java 17
-#         uses: actions/setup-java@v3
-#         with:
-#           distribution: 'temurin'
-#           java-version: '17'
-
-#       - name: install Flutter
-#         uses: subosito/flutter-action@v2
-#         with:
-#           flutter-version: '3.24.5'
-
-#       - name: install dependencies
-#         run: flutter pub get
-
-#       - name: Run tests
-#         run: flutter test
-
-#       - name: Build APK
-#         run: flutter build apk --release
+    steps:
+      - name: chechout code
+        uses: actions/checkout@v3
 
 
-#       - name: upload APK
-#         uses: actions/upload-artifact@v3
-#         with:
-#           name: release-apk
-#           path: build/app/outputs/flutter-apk/app-release.apk 
+      - name: ser up Java 17
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: install Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.24.5'
+
+      - name: install dependencies
+        run: flutter pub get
+
+      - name: Run tests
+        run: flutter test
+
+      - name: Build APK
+        run: flutter build apk --release
+
+
+      - name: upload APK
+        uses: actions/upload-artifact@v3
+        with:
+          name: release-apk
+          path: build/app/outputs/flutter-apk/app-release.apk 
 
 
 
