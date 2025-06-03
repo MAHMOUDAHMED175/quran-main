@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: chechout code
+      - name: chechoutCCCCCCCode
         uses: actions/checkout@v3
 
 
